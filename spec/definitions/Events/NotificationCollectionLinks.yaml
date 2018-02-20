@@ -15,14 +15,14 @@ properties:
     allOf:
       - $ref: '#/definitions/Link'
     example:
-      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations
+      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations?page=next
   previous:
     type: object
     description: Cursor backward in the collection (optional)
     allOf:
       - $ref: '#/definitions/Link'
     example:
-      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations
+      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations?page=previous
   item:
     type: array
     description: Cursor forward in the collection (optional)
