@@ -1,0 +1,34 @@
+
+type: object
+description: The links related to the notification
+properties:
+  self:
+    type: object
+    description: Self link
+    allOf:
+      - $ref: '#/definitions/Link'
+    example:
+      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/notifications/
+  next:
+    type: object
+    description: Cursor forward in the collection (optional)
+    allOf:
+      - $ref: '#/definitions/Link'
+    example:
+      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations
+  previous:
+    type: object
+    description: Cursor backward in the collection (optional)
+    allOf:
+      - $ref: '#/definitions/Link'
+    example:
+      href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations
+  item:
+    type: array
+    description: Cursor forward in the collection (optional)
+    items:
+      type: object
+      allOf:
+        - $ref: '#/definitions/Link'
+      example:
+        href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/notifcations/ntf_az5sblvku4ge3dwpztvyizgcau

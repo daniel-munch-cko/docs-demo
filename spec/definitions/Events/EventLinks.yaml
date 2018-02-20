@@ -15,3 +15,10 @@ properties:
     description: A link to retry all of the webhooks configured for the event
     example:
       href: "https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/retry"
+  notifications:
+    type: object
+    allOf:
+      - $ref: '#/definitions/Link'
+    description: list of event notifications
+    example:
+      href: "https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/notifcations"

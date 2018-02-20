@@ -1,0 +1,9 @@
+type: object
+properties:
+  item:
+    type: array
+    description: The notification events ordered by timestamp in descending order (latest first)
+    items:
+      $ref: '#/definitions/NotificationSummary'
+  _links:
+    $ref: '#/definitions/NotificationCollectionLinks'
